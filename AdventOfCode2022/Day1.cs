@@ -7,10 +7,11 @@ internal class Day1
         List<int> elfs = new();
 
         string? line;
-        while((line = reader.ReadLine()) != null)
+        while ((line = reader.ReadLine()) != null)
         {
             if (string.IsNullOrWhiteSpace(line)) { newElf = true; continue; }
-            if (newElf) {
+            if (newElf)
+            {
                 newElf = false;
                 elfs.Add(0);
             }
