@@ -45,8 +45,14 @@ Console.WriteLine("--- Day 3: Rucksack Reorganization ---");
 write_empty();
 int day3_result;
 using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_3_input.txt"))
-    day3_result = Day3.run(reader);
+    day3_result = Day3.run_p1(reader);
 Console.WriteLine($"The sum of the priorities of all common items is:\n{day3_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_3_input.txt"))
+    day3_result = Day3.run_p2(reader);
+Console.WriteLine($"The sum of the priorities of all badges is:\n{day3_result}");
 #endregion
 
 Console.ReadLine();
