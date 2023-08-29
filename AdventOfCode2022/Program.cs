@@ -26,6 +26,17 @@ using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_2_input.
 Console.WriteLine($"If everything goes exactly according to my strategy guide,\nmy total score would be:\n{day2_result}");
 #endregion
 
+#region Day3
+write_empty();
+write_sep();
+Console.WriteLine("--- Day 3: Rucksack Reorganization ---");
+write_empty();
+int day3_result;
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_3_input.txt"))
+    day3_result = Day3.run(reader);
+Console.WriteLine($"The sum of the priorities of all common items is:\n{day3_result}");
+#endregion
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
