@@ -15,6 +15,16 @@ using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_1_input.
 Console.WriteLine($"The Elf that carries the most calories carries:\n{day1_result}");
 #endregion
 
+#region Day2
+write_empty();
+write_sep();
+Console.WriteLine("--- Day 2: Rock Paper Scissors ---");
+write_empty();
+int day2_result;
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_2_input.txt"))
+    day2_result = Day2.run(reader);
+Console.WriteLine($"If everything goes exactly according to my strategy guide,\nmy total score would be:\n{day2_result}");
+#endregion
 
 Console.ReadLine();
 
