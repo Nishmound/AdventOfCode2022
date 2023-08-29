@@ -11,8 +11,14 @@ Console.WriteLine("--- Day 1: Calorie Counting ---");
 write_empty();
 int day1_result;
 using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_1_input.txt"))
-    day1_result = Day1.run(reader);
+    day1_result = Day1.run_p1(reader);
 Console.WriteLine($"The Elf that carries the most calories carries:\n{day1_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_1_input.txt"))
+    day1_result = Day1.run_p2(reader);
+Console.WriteLine($"The top three elves that are carrying the most calories\nare carrying in total:\n{day1_result}");
 #endregion
 
 #region Day2

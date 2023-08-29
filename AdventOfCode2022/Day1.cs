@@ -1,7 +1,17 @@
 ﻿namespace AdventOfCode2022;
 internal class Day1
 {
-    public static int run(StreamReader reader)
+    internal static int run_p1(StreamReader reader)
+    {
+        return elfs(reader).Max();
+    }
+
+    internal static int run_p2(StreamReader reader)
+    {
+        return elfs(reader).OrderDescending().Take(3).Sum();
+    }
+
+    static List<int> elfs(StreamReader reader)
     {
         var newElf = true;
         List<int> elfs = new();
@@ -19,6 +29,6 @@ internal class Day1
             elfs[elfs.Count - 1] += int.Parse(line);
         }
 
-        return elfs.Max();
+        return elfs;
     }
 }
