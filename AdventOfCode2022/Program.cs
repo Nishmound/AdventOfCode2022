@@ -28,7 +28,13 @@ Console.WriteLine("--- Day 2: Rock Paper Scissors ---");
 write_empty();
 int day2_result;
 using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_2_input.txt"))
-    day2_result = Day2.run(reader);
+    day2_result = Day2.run_p1(reader);
+Console.WriteLine($"If everything goes exactly according to my strategy guide,\nmy total score would be:\n{day2_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_2_input.txt"))
+    day2_result = Day2.run_p2(reader);
 Console.WriteLine($"If everything goes exactly according to my strategy guide,\nmy total score would be:\n{day2_result}");
 #endregion
 
