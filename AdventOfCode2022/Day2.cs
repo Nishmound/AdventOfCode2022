@@ -1,7 +1,7 @@
 ﻿namespace AdventOfCode2022;
 internal class Day2
 {
-    public static int run(StreamReader reader)
+    public static int run_p1(StreamReader reader)
     {
         int score = 0;
 
@@ -46,6 +46,66 @@ internal class Day2
                             break;
                         case 'B':
                             score += 6;
+                            break;
+                    }
+                    break;
+            }
+        }
+
+        return score;
+    }
+
+    public static int run_p2(StreamReader reader)
+    {
+        int score = 0;
+
+        string? line;
+        while ((line = reader.ReadLine()) != null)
+        {
+            char opponent = line[0];
+            char player = line[2];
+
+            switch (opponent)
+            {
+                case 'A':
+                    switch (player)
+                    {
+                        case 'X':
+                            score += 0 + 3;
+                            break;
+                        case 'Y':
+                            score += 3 + 1;
+                            break;
+                        case 'Z':
+                            score += 6 + 2;
+                            break;
+                    }
+                    break;
+                case 'B':
+                    switch (player)
+                    {
+                        case 'X':
+                            score += 0 + 1;
+                            break;
+                        case 'Y':
+                            score += 3 + 2;
+                            break;
+                        case 'Z':
+                            score += 6 + 3;
+                            break;
+                    }
+                    break;
+                case 'C':
+                    switch (player)
+                    {
+                        case 'X':
+                            score += 0 + 2;
+                            break;
+                        case 'Y':
+                            score += 3 + 3;
+                            break;
+                        case 'Z':
+                            score += 6 + 1;
                             break;
                     }
                     break;

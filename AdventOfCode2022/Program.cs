@@ -11,8 +11,14 @@ Console.WriteLine("--- Day 1: Calorie Counting ---");
 write_empty();
 int day1_result;
 using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_1_input.txt"))
-    day1_result = Day1.run(reader);
+    day1_result = Day1.run_p1(reader);
 Console.WriteLine($"The Elf that carries the most calories carries:\n{day1_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_1_input.txt"))
+    day1_result = Day1.run_p2(reader);
+Console.WriteLine($"The top three elves that are carrying the most calories\nare carrying in total:\n{day1_result}");
 #endregion
 
 #region Day2
@@ -22,7 +28,13 @@ Console.WriteLine("--- Day 2: Rock Paper Scissors ---");
 write_empty();
 int day2_result;
 using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_2_input.txt"))
-    day2_result = Day2.run(reader);
+    day2_result = Day2.run_p1(reader);
+Console.WriteLine($"If everything goes exactly according to my strategy guide,\nmy total score would be:\n{day2_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_2_input.txt"))
+    day2_result = Day2.run_p2(reader);
 Console.WriteLine($"If everything goes exactly according to my strategy guide,\nmy total score would be:\n{day2_result}");
 #endregion
 
@@ -33,8 +45,14 @@ Console.WriteLine("--- Day 3: Rucksack Reorganization ---");
 write_empty();
 int day3_result;
 using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_3_input.txt"))
-    day3_result = Day3.run(reader);
+    day3_result = Day3.run_p1(reader);
 Console.WriteLine($"The sum of the priorities of all common items is:\n{day3_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_3_input.txt"))
+    day3_result = Day3.run_p2(reader);
+Console.WriteLine($"The sum of the priorities of all badges is:\n{day3_result}");
 #endregion
 
 Console.ReadLine();
