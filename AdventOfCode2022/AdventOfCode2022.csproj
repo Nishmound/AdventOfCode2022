@@ -21,6 +21,9 @@
     <None Update="inputs\adventofcode.com_2022_day_3_input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="inputs\adventofcode.com_2022_day_4_input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
