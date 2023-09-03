@@ -72,6 +72,23 @@ using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_4_input.
 Console.WriteLine($"The number of assignment pairs,\nwhere one range fully contains the other, is:\n{day4_result}");
 #endregion
 
+#region Day5
+write_empty();
+write_sep();
+Console.WriteLine("--- Day 5: Supply Stacks ---");
+write_empty();
+string day5_result;
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_5_input.txt"))
+    day5_result = Day5.run_p1(reader);
+Console.WriteLine($"After rearranging, the crates at the top are:\n{day5_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_5_input.txt"))
+    day5_result = Day5.run_p2(reader);
+Console.WriteLine($"After rearranging, the crates at the top are:\n{day5_result}");
+#endregion
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
