@@ -89,6 +89,23 @@ using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_5_input.
 Console.WriteLine($"After rearranging, the crates at the top are:\n{day5_result}");
 #endregion
 
+#region Day6
+write_empty();
+write_sep();
+Console.WriteLine("--- Day 6: Tuning trouble ---");
+write_empty();
+int day6_result;
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_6_input.txt"))
+    day6_result = Day6.run_p1(reader);
+Console.WriteLine($"Before the first start-of-packet marker is detected,\n the amount of characters needed to be processed is:\n{day6_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_6_input.txt"))
+    day6_result = Day6.run_p2(reader);
+Console.WriteLine($"Before the first start-of-message marker is detected,\n the amount of characters needed to be processed is:\n{day6_result}");
+#endregion
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
