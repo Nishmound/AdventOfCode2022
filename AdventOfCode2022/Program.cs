@@ -106,6 +106,23 @@ using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_6_input.
 Console.WriteLine($"Before the first start-of-message marker is detected,\n the amount of characters needed to be processed is:\n{day6_result}");
 #endregion
 
+#region Day6
+write_empty();
+write_sep();
+Console.WriteLine("--- Day 7: No Space Left On Device ---");
+write_empty();
+int day7_result;
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_7_input.txt"))
+    day7_result = Day7.run_p1(reader);
+Console.WriteLine($"The sum of the total sizes of all directories\nwith a total size of at most 100000 is:\n{day7_result}");
+write_empty();
+Console.WriteLine("--- Part Two ---");
+write_empty();
+using (var reader = new StreamReader(@"inputs\adventofcode.com_2022_day_7_input.txt"))
+    day7_result = Day7.run_p2(reader);
+Console.WriteLine($"The smallest directory that fits the criteria\nhas a total size of:\n{day7_result}");
+#endregion
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
