@@ -1,7 +1,6 @@
-﻿namespace AdventOfCode2022;
-internal class Day2
+﻿internal class Day2 : AdventDay<int>
 {
-    public static int run_p1(StreamReader reader)
+    public int run_p1(StreamReader reader)
     {
         int score = 0;
 
@@ -55,7 +54,7 @@ internal class Day2
         return score;
     }
 
-    public static int run_p2(StreamReader reader)
+    public int run_p2(StreamReader reader)
     {
         int score = 0;
 

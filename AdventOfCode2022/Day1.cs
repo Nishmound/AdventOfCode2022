@@ -1,12 +1,11 @@
-﻿namespace AdventOfCode2022;
-internal class Day1
+﻿internal class Day1 : AdventDay<int>
 {
-    internal static int run_p1(StreamReader reader)
+    public int run_p1(StreamReader reader)
     {
         return elfs(reader).Max();
     }
 
-    internal static int run_p2(StreamReader reader)
+    public int run_p2(StreamReader reader)
     {
         return elfs(reader).OrderDescending().Take(3).Sum();
     }

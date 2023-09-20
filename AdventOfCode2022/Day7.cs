@@ -1,13 +1,13 @@
-﻿internal class Day7
+﻿internal class Day7 : AdventDay<int>
 {
-    internal static int run_p1(StreamReader reader)
+    public int run_p1(StreamReader reader)
     {
         Folder root = readFileTree(reader);
 
         return root.getSizeCap100000();
     }
 
-    internal static int run_p2(StreamReader reader)
+    public int run_p2(StreamReader reader)
     {
         Folder root = readFileTree(reader);
         int diff = 30000000 - (70000000 - root.Size);
