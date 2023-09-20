@@ -47,7 +47,7 @@ RunDay(new Day8(),
     "adventofcode.com_2022_day_8_input",
     "Day 8: Treetop Tree House",
     "The amount of trees visible from outside is",
-    "");
+    "The highest scenic score possible is");
 
 Console.ReadLine();
 
