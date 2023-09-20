@@ -1,11 +1,11 @@
 ﻿internal class Day6 : AdventDay<int>
 {
-    public int run_p1(StreamReader reader)
+    public int RunP1(StreamReader reader)
     {
         return find_distinct_index(reader, 4);
     }
 
-    public int run_p2(StreamReader reader)
+    public int RunP2(StreamReader reader)
     {
         return find_distinct_index(reader, 14);
     }

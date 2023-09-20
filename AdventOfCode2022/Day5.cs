@@ -1,6 +1,6 @@
 ﻿internal class Day5 : AdventDay<string>
 {
-    public string run_p1(StreamReader reader)
+    public string RunP1(StreamReader reader)
     {
         Stack<char>[] _crates = crates(reader);
 
@@ -24,7 +24,7 @@
         return tops;
     }
 
-    public string run_p2(StreamReader reader)
+    public string RunP2(StreamReader reader)
     {
         Stack<char>[] _crates = crates(reader);
 

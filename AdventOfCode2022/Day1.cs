@@ -1,11 +1,11 @@
 ﻿internal class Day1 : AdventDay<int>
 {
-    public int run_p1(StreamReader reader)
+    public int RunP1(StreamReader reader)
     {
         return elfs(reader).Max();
     }
 
-    public int run_p2(StreamReader reader)
+    public int RunP2(StreamReader reader)
     {
         return elfs(reader).OrderDescending().Take(3).Sum();
     }

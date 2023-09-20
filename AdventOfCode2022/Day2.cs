@@ -1,6 +1,6 @@
 ﻿internal class Day2 : AdventDay<int>
 {
-    public int run_p1(StreamReader reader)
+    public int RunP1(StreamReader reader)
     {
         int score = 0;
 
@@ -54,7 +54,7 @@
         return score;
     }
 
-    public int run_p2(StreamReader reader)
+    public int RunP2(StreamReader reader)
     {
         int score = 0;
 

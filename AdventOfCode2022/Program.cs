@@ -62,12 +62,12 @@ static void RunDay<T>(AdventDay<T> day, string inputPath, string title, string p
     write_empty();
     T result;
     using (var reader = new StreamReader($@"inputs\{inputPath}.txt"))
-        result = day.run_p1(reader);
+        result = day.RunP1(reader);
     Console.WriteLine($"{p1Text}:\n{result}");
     write_empty();
     Console.WriteLine("--- Part Two ---");
     write_empty();
     using (var reader = new StreamReader($@"inputs\{inputPath}.txt"))
-        result = day.run_p2(reader);
+        result = day.RunP2(reader);
     Console.WriteLine($"{p2Text}:\n{result}");
 }

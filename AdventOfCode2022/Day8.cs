@@ -1,12 +1,17 @@
 ﻿internal class Day8 : AdventDay<int>
 {
-    public int run_p1(StreamReader reader)
+    public int RunP1(StreamReader reader)
     {
         return 0;
     }
 
-    public int run_p2(StreamReader reader)
+    public int RunP2(StreamReader reader)
     {
         return 0;
     }
+
+    //byte[,] MakeHeightMap(StreamReader reader)
+    //{
+    //
+    //}
 }
