@@ -1,6 +1,6 @@
-﻿internal class Day4
+﻿internal class Day4 : AdventDay<int>
 {
-    internal static int run_p1(StreamReader reader)
+    public int RunP1(StreamReader reader)
     {
         int count = 0;
 
@@ -19,7 +19,7 @@
         return count;
     }
 
-    internal static int run_p2(StreamReader reader)
+    public int RunP2(StreamReader reader)
     {
         int count = 0;
 
