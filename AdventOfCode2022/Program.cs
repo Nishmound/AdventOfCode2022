@@ -61,6 +61,12 @@ RunDay(new Day10(),
     "The sum of the signal strengths is",
     "");
 
+RunDay(new Day11(),
+    "adventofcode.com_2022_day_11_input",
+    "Day 11: Monkey in the Middle",
+    "",
+    "");
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
