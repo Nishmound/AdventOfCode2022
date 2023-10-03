@@ -53,6 +53,12 @@ RunDay(new Day9(),
     "adventofcode.com_2022_day_9_input",
     "Day 9: Rope Bridge",
     "The amount of positions the tail of the rop visits at least once is",
+    "The amount of positions the tail of the rop visits at least once is");
+
+RunDay(new Day10(),
+    "adventofcode.com_2022_day_10_input",
+    "Day 10: Cathode-Ray Tube",
+    "The sum of the signal strengths is",
     "");
 
 Console.ReadLine();
