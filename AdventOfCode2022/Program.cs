@@ -49,6 +49,12 @@ RunDay(new Day8(),
     "The amount of trees visible from outside is",
     "The highest scenic score possible is");
 
+RunDay(new Day9(),
+    "adventofcode.com_2022_day_9_input",
+    "Day 9: Rope Bridge",
+    "The amount of positions the tail of the rop visits at least once is",
+    "");
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
