@@ -67,6 +67,12 @@ RunDay(new Day11(),
     "",
     "");
 
+RunDay(new Day12(),
+    "adventofcode.com_2022_day_12_input",
+    "Day 12: Hill Climbing Algorithm",
+    "",
+    "");
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
