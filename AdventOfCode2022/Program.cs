@@ -1,6 +1,7 @@
 ﻿Console.WriteLine("Advent of Code\n$year=2022;");
 write_empty();
 
+/*
 RunDay(new Day1(),
     "adventofcode.com_2022_day_1_input",
     "Day 1: Calorie Counting",
@@ -72,6 +73,7 @@ RunDay(new Day12(),
     "Day 12: Hill Climbing Algorithm",
     "",
     "");
+*/
 
 Console.ReadLine();
 
