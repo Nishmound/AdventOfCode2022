@@ -75,6 +75,12 @@ RunDay(new Day12(),
     "");
 */
 
+RunDay(new Day13(),
+    "TestInput",
+    "Day 13: Distress Signal",
+    "",
+    "");
+
 Console.ReadLine();
 
 static void write_sep() => Console.WriteLine(string.Join("", Enumerable.Repeat("#", 50)));
