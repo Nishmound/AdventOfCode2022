@@ -55,14 +55,11 @@ internal class Day12 : AdventDay<int>
 
     int findPath(Position start, Position end, in char[,] map)
     {
-        Console.WriteLine("Start at (" + start.X + ", " + start.Y + "):");
 
         List<Position> visited = new();
         List<Position> current = new() { start };
         int steps = 0;
         int total = map.GetLength(0) * map.GetLength(1);
-
-        Console.Write("Visited 0/" + total);
 
         while (!current.Contains(end))
         {
@@ -100,12 +97,8 @@ internal class Day12 : AdventDay<int>
 
             visited.AddRange(current);
             current = next.Distinct().ToList();
-            Console.SetCursorPosition(0, Console.CursorTop);
-            Console.Write("Visited " + visited.Count + "/" + total);
             steps++;
         }
-        Console.WriteLine();
-        Console.WriteLine("Path Length: " + steps);
         return steps;
     }
 
