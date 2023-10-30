@@ -76,7 +76,7 @@ RunDay(new Day12(),
 */
 
 RunDay(new Day13(),
-    "TestInput",
+    "adventofcode.com_2022_day_13_input",
     "Day 13: Distress Signal",
     "",
     "");
