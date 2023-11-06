@@ -73,13 +73,19 @@ RunDay(new Day12(),
     "Day 12: Hill Climbing Algorithm",
     "",
     "");
-*/
 
 RunDay(new Day13(),
     "adventofcode.com_2022_day_13_input",
     "Day 13: Distress Signal",
     "",
     "");
+*/
+
+RunDay(new Day14(),
+    "adventofcode.com_2022_day_14_input",
+    "Day 14: Regolith Reservoir",
+    "How many units of sand come to rest?",
+    "How many units of sand come to rest?");
 
 Console.ReadLine();
 
