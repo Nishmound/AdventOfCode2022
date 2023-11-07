@@ -85,12 +85,18 @@ RunDay(new Day14(),
     "Day 14: Regolith Reservoir",
     "How many units of sand come to rest?",
     "How many units of sand come to rest?");
-*/
 
 RunDay(new Day15(),
     "adventofcode.com_2022_day_15_input",
     "Day 15: Beacon Exclusion Zone",
     "In the row where y=2000000, how many positions cannot contain a beacon?",
+    "");
+*/
+
+RunDay(new Day16(),
+    "TestInput",
+    "Day 16: Proboscidea Volcanium",
+    "What is the most pressure you can release?",
     "");
 
 Console.ReadLine();
