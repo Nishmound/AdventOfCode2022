@@ -79,13 +79,19 @@ RunDay(new Day13(),
     "Day 13: Distress Signal",
     "",
     "");
-*/
 
 RunDay(new Day14(),
     "adventofcode.com_2022_day_14_input",
     "Day 14: Regolith Reservoir",
     "How many units of sand come to rest?",
     "How many units of sand come to rest?");
+*/
+
+RunDay(new Day15(),
+    "adventofcode.com_2022_day_15_input",
+    "Day 15: Beacon Exclusion Zone",
+    "In the row where y=2000000, how many positions cannot contain a beacon?",
+    "");
 
 Console.ReadLine();
 
