@@ -361,4 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/AdventOfCode2022/inputs/TestInput.txt
+/AdventOfCode2022/inputs/
+
+/AdventOfCode2022/inputs/adventofcode.com_2022_day_1_input.txt
