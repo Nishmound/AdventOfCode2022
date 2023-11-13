@@ -94,13 +94,7 @@ RunDay(new Day15(),
 */
 
 RunDay(new Day16(),
-    "TestInput",
-    "Day 16: Proboscidea Volcanium",
-    "What is the most pressure you can release?",
-    "With you and an elephant working together for 26 minutes,\nwhat is the most pressure you could release?");
-
-RunDay(new Day16(),
-    "adventofcode.com_2022_day_16_input",
+    "input_day16",
     "Day 16: Proboscidea Volcanium",
     "What is the most pressure you can release?",
     "With you and an elephant working together for 26 minutes,\nwhat is the most pressure you could release?");
