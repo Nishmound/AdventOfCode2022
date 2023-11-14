@@ -91,19 +91,21 @@ RunDay(new Day15(),
     "Day 15: Beacon Exclusion Zone",
     "In the row where y=2000000, how many positions cannot contain a beacon?",
     "");
+
+RunDay(new Day16(),
+    "input_day16",
+    "Day 16: Proboscidea Volcanium",
+    "What is the most pressure you can release?",
+    "With you and an elephant working together for 26 minutes,\nwhat is the most pressure you could release?");
+
 */
 
-RunDay(new Day16(),
-    "TestInput",
-    "Day 16: Proboscidea Volcanium",
-    "What is the most pressure you can release?",
-    "With you and an elephant working together for 26 minutes,\nwhat is the most pressure you could release?");
+RunDay(new Day17(),
+    "input_day17",
+    "Day 17: Pyroclastic Flow",
+    "How many units tall will the tower of rocks be\nafter 2022 rocks have stopped falling?",
+    "How tall will the tower be after 1000000000000 rocks have stopped?");
 
-RunDay(new Day16(),
-    "adventofcode.com_2022_day_16_input",
-    "Day 16: Proboscidea Volcanium",
-    "What is the most pressure you can release?",
-    "With you and an elephant working together for 26 minutes,\nwhat is the most pressure you could release?");
 
 Console.ReadLine();
 
@@ -117,13 +119,21 @@ static void RunDay<T>(AdventDay<T> day, string inputPath, string title, string p
     Console.WriteLine($"--- {title} ---");
     write_empty();
     T result;
+    var watch = System.Diagnostics.Stopwatch.StartNew();
     using (var reader = new StreamReader($@"inputs\{inputPath}.txt"))
         result = day.RunP1(reader);
+    watch.Stop();
     Console.WriteLine($"{p1Text}:\n{result}");
+    write_empty();
+    Console.WriteLine($"Executed in {watch.ElapsedMilliseconds} ms");
     write_empty();
     Console.WriteLine("--- Part Two ---");
     write_empty();
+    watch = System.Diagnostics.Stopwatch.StartNew();
     using (var reader = new StreamReader($@"inputs\{inputPath}.txt"))
         result = day.RunP2(reader);
+    watch.Stop();
     Console.WriteLine($"{p2Text}:\n{result}");
+    write_empty();
+    Console.WriteLine($"Executed in {watch.ElapsedMilliseconds} ms");
 }
