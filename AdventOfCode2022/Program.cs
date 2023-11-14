@@ -97,13 +97,19 @@ RunDay(new Day16(),
     "Day 16: Proboscidea Volcanium",
     "What is the most pressure you can release?",
     "With you and an elephant working together for 26 minutes,\nwhat is the most pressure you could release?");
-*/
 
 RunDay(new Day17(),
     "input_day17",
     "Day 17: Pyroclastic Flow",
     "How many units tall will the tower of rocks be\nafter 2022 rocks have stopped falling?",
     "How tall will the tower be after 1000000000000 rocks have stopped?");
+*/
+
+RunDay(new Day18(),
+    "input_day18",
+    "Day 18: Boiling Boulders",
+    "What is the surface area of your scanned lava droplet?",
+    "What is the exterior surface area of your scanned lava droplet?");
 
 Console.ReadLine();
 
