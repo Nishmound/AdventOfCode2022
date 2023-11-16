@@ -103,13 +103,19 @@ RunDay(new Day17(),
     "Day 17: Pyroclastic Flow",
     "How many units tall will the tower of rocks be\nafter 2022 rocks have stopped falling?",
     "How tall will the tower be after 1000000000000 rocks have stopped?");
-*/
 
 RunDay(new Day18(),
     "input_day18",
     "Day 18: Boiling Boulders",
     "What is the surface area of your scanned lava droplet?",
     "What is the exterior surface area of your scanned lava droplet?");
+*/
+
+RunDay(new Day19(),
+    "input_day19",
+    "Day 19: Not Enough Minerals",
+    "What do you get if you add up the quality level of all of the blueprints in your list?",
+    "What do you get if you multiply these numbers together?");
 
 Console.ReadLine();
 
